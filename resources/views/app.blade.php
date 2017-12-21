@@ -14,24 +14,18 @@
 @endpush
 
 @push('css')
-<link href='//fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
-<!-- Show Preloader When Not Finished Loading Vue -->
-<style type="text/css">
-[v-cloak] > * { display:none }
-[v-cloak]::before { 
-  content: " ";
-  display: block;
-  width: 75px;
-  height: 75px;
-  background-size: cover;
-  background-repeat:  no-repeat;
-  background-position: center center; 
-  background-image: url('/loaders/default.svg');
-}
-</style>
+<link rel="stylesheet" href="{{ mix('/css/app.css') }}">
 @endpush
 
 @push('header_js')
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+ WebFont.load({
+    google: {
+      families: ['Material Icons','Roboto']
+    }
+  });
+</script>
 @endpush
 
 @push('title')
@@ -39,8 +33,17 @@
 @endpush
 
 @section('content')
-<div id="app" v-cloak></div>
-    <app/>
+<div id="app" v-cloak>
+  <app/>
+  <div id="preloader v-cloak--block full-width">
+    <div class="spinner">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
+  </div>
 </div>
 @endsection
 

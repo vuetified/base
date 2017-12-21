@@ -35,7 +35,8 @@ mix.js('resources/assets/js/app.js', 'public/js')
     .extract([
         'axios', 'vue', 'vuetify'
     ])
-    .sourceMaps();
+mix.sass('resources/assets/sass/app.scss', 'public/css')
+mix.sourceMaps()
 if (mix.inProduction()) {
     mix.version()
     mix.disableNotifications()
