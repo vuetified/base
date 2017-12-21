@@ -30,10 +30,10 @@ visibility: hidden;
 display: none;
 }
 .spinner {
-width: 350px;
-height: 220px;
+width: 400px;
+height: 300px;
 text-align: center;
-font-size: 16px;
+font-size: 18px;
 position: absolute;
 top: 0;
 bottom: 0;
@@ -42,8 +42,8 @@ right: 0;
 margin: auto;
 }
 .spinner > div {
-height: 60%;
-width: 10px;
+height: 55%;
+width: 15px;
 background-color: #3cba54;
 display: inline-block;
 -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
@@ -65,7 +65,7 @@ background-color: #4885ed;
 animation-delay: -0.9s;
 }
 .spinner .rect5 {
-background-color: #607d8b;
+background-color: #ffffff;
 -webkit-animation-delay: -0.8s;
 animation-delay: -0.8s;
 }
