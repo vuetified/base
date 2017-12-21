@@ -59,9 +59,11 @@
             align-center
           >
             <img 
-              src="/public/v.png" 
+              src="https://vuetifyjs.com/static/doc-images/logo.svg"
               alt="Vuetify.js" 
-              class="mb-5" 
+              class="mb-5"
+              width="200px"
+              height="350px"
             >
             <blockquote>
               &#8220;First, solve the problem. Then, write the code.&#8221;
